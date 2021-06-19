@@ -5,15 +5,14 @@ import {
   Route,
 } from 'react-router-dom';
 import allActions from './actions';
-import LogIn from './components/LogIn';
-import NoMatch from './components/NoMatch';
+import Home from './paginas/Home';
+import NoMatch from './paginas/NoMatch';
 
 function App() {
   return (
     <>
       <Switch>
-        <Route exact path="/" component={LogIn} />
-        <Route path="*" component={NoMatch} />
+        <Route exact path="/" component={Home} />
       </Switch>
     </>
   );

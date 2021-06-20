@@ -17,6 +17,7 @@ box-shadow: rgb(0 0 0 / 10%) 0px 0px 0.2rem;
 display: flex;
 justify-content: center;
 align-items: center;
+background-color:white;
 `;
 const Text = styled.p`
 color:rgb(0, 184, 215);

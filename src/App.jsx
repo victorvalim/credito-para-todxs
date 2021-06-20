@@ -7,6 +7,7 @@ import {
 import allActions from './actions';
 import Home from './paginas/Home';
 import NoMatch from './paginas/NoMatch';
+import GlobalStyle from './componentes/GlobalStyle'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
       </Switch>
+      <GlobalStyle />
     </>
   );
 }

@@ -110,7 +110,6 @@ display:flex;
 flex-flow: column nowrap;
 justify-content: space-evenly;
 align-items: center;
-opacity:0.8;
 @media (max-width: 1024px){
 width:80vw;
 
@@ -313,7 +312,7 @@ function Main() {
         <ProposalDetailContainer>
           {isHired ? (
             <>
-              <ModalText>Obrigado por nos contratar</ModalText>
+              <ModalText>Obrigado por Contratar nossos Serviços !!!</ModalText>
               <ButtonModal onClick={() => closeModal()}>Finalizar</ButtonModal>
             </>
           ) : (

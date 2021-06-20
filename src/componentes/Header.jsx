@@ -9,7 +9,7 @@ height: 5rem;
 top: 0px;
 position: sticky;
 z-index: 1000;
-box-shadow: rgb(0 0 0 / 10%) 0px 0px 0.2rem;
+box-shadow: rgb(0 0 0 / 10%) 0px 0px 0.5rem;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -25,7 +25,7 @@ function Header() {
 <Text>
   {`Crédito
   para 
-  todx`}
+  todXs`}
 </Text>
     </HeaderContainer>
   );

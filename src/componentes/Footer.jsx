@@ -9,11 +9,9 @@ height: 5rem;
 display:flex;
 justify-content: center;
 `;
-const Text = styled.p`
-color:black;
-background:transparent;
-`;
+
 export const TextoFooter = styled.div`
+width:800px;
 height:100%;
 padding:15px;
 display:flex;
@@ -43,8 +41,9 @@ color:yellow;
 `;
 
 export const ItemImageFooter = styled.img`
-padding:5px;
+padding:0 3px;
 `;
+
 
 
 function Footer() {
@@ -55,10 +54,10 @@ function Footer() {
             </ItemFooter>
           </TextoFooter>
           <ImageFooter>
-            <ItemImageFooter src="https://i.imgur.com/nUwIKvQ.png" width="30px" />
-            <ItemImageFooter src="https://i.imgur.com/uDFwo4g.png" width="30px" />
-            <ItemImageFooter src="https://i.imgur.com/AOkqFEC.png" width="30px" />
-            <ItemImageFooter src="https://i.imgur.com/xuwsQEa.png" width="30px" />
+            <a target="_blank" href="https://www.facebook.com/serasa.com.br"><ItemImageFooter src="https://i.imgur.com/nUwIKvQ.png" width="30px" /></a>
+            <a target="_blank" href="https://www.instagram.com/serasa/"><ItemImageFooter src="https://i.imgur.com/uDFwo4g.png" width="30px" /></a>
+            <a target="_blank" href="https://www.linkedin.com/company/serasa/"><ItemImageFooter src="https://i.imgur.com/AOkqFEC.png" width="30px" /></a>
+            <a target="_blank" href="https://open.spotify.com/show/5ZTMUau1ssfgmCIyvygpwt"><ItemImageFooter src="https://i.imgur.com/xuwsQEa.png" width="30px" /></a>
           </ImageFooter>
     </FooterContainer>
   );

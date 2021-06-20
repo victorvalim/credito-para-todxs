@@ -11,10 +11,43 @@ const defaultAction = (payload) => {
       payload,
   }
 }
+
+const loanValue = (payload) => {
+  return {
+      type: 'LOAN_VALUE',
+      payload,
+  }
+}
+
+const backToLoan = (payload) => {
+  return {
+      type: 'BACK_TO_LOAN',
+      payload,
+  }
+}
+
+const installmentsValue = (payload1, payload2, payload3) => {
+  return {
+      type: 'INSTALLMENTS_VALUE',
+      payload1,
+      payload2,
+      payload3,
+  }
+}
+const willBeHired = (payload) => {
+  return {
+      type: 'WILL_BE_HIRED',
+      payload,
+  }
+}
 // const thunk = (payload) => async (dispatch) => {
 
 //   }
 
 export default {
   defaultAction,
+  loanValue,
+  backToLoan,
+  installmentsValue,
+  willBeHired,
 }

@@ -25,6 +25,12 @@ display: flex;
 // flex-wrap: nowrap;
 // justify-content: center;
 // align-items: center;
+@media (max-width: 800px){
+  display: flex;
+flex-direction:column;
+justify-content: flex-start;
+align-items: center;
+}
 `;
 const ItemContainer = styled.div`
 width:25%;
@@ -34,6 +40,10 @@ flex-flow: column wrap;
 justify-content: center;
 align-items: center;
 align-content: center;
+@media (max-width: 800px){
+width:40%;
+margin:0.5rem;
+}
 `;
 
 const Image = styled.img`

@@ -29,16 +29,26 @@ flex-wrap: wrap;
 justify-content: space-evenly;
 -webkit-box-align: center;
 align-items: center;
+@media (max-width: 1024px){
+  padding:1rem;
+
+}
 `;
 const Image = styled.img`
 float:right;
 width: 429px;
 height: auto;
+@media (max-width: 1024px){
+  display:none;
+}
 `;
 const FormContainer = styled.div`
 display: flex;
 flex-flow: column wrap;
 width: 45vw;
+@media (max-width: 1024px){
+  width: 100vw;
+}
 `;
 const Text = styled.p`
 margin:0.5rem;
@@ -46,6 +56,9 @@ font-size:2rem;
 color:rgb(23, 28, 37);
 background:transparent;
 font-weight:700;
+@media (max-width: 1024px){
+  text-align: center;
+}
 `;
 const TextWithSVG = styled(Text)`
 font-size:1.5rem;
@@ -60,7 +73,14 @@ svg{
 `;
 const ButtonContainer = styled.div`
 width:100%;
+@media (max-width: 1024px){
+  display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+-webkit-box-align: center;
+align-items: center;
 
+}
 `;
 const Button = styled.button`
 cursor: pointer;
@@ -90,7 +110,12 @@ display:flex;
 flex-flow: column nowrap;
 justify-content: space-evenly;
 align-items: center;
-opacity:0.6;
+opacity:0.8;
+@media (max-width: 1024px){
+width:80vw;
+
+}
+
 `;
 const ModalText = styled(Text)`
 color: #575755;

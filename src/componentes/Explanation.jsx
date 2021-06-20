@@ -8,6 +8,7 @@ import quatro from '../imagens/quatro.webp'
 const MainContainer = styled.main`
 background: rgb(242, 242, 242);
 width:100vw;
+padding-bottom:1rem;
 
 `;
 const Text = styled.h1`
@@ -68,7 +69,8 @@ box-shadow: 0 3px 3px 0px RGB(0, 0, 0, 0.3);
 border-radius: 7px;
 background-color: rgb(0, 184, 215);
 margin: 0 auto;
-margin-bottom:20px;
+
+
 &:hover {
 
   background-color: gray;

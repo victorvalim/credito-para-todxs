@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../componentes/Header'
 import Main from '../componentes/Main';
 import Explanation from '../componentes/Explanation';
+import Footer from '../componentes/Footer';
 
 function Home() {
 
@@ -10,6 +11,7 @@ function Home() {
       <Header />
       <Main />
       <Explanation />
+      <Footer />
     </>
   );
 }

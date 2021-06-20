@@ -10,10 +10,6 @@ top: 0px;
 position: sticky;
 z-index: 1000;
 box-shadow: rgb(0 0 0 / 10%) 0px 0px 0.2rem;
-// background: linear-gradient(
-//   180deg
-//   , rgba(137, 26, 197, 1) 0%, rgba(235, 61, 199, 1) 82%);
-//   }  
 display: flex;
 justify-content: center;
 align-items: center;

@@ -123,7 +123,7 @@ font-weight:300;
 
 `;
 const TextNumbers = styled(Text)`
-font-size:1.5rem;
+font-size:2rem;
 color:rgb(0, 184, 215);
 
 font-weight:300;

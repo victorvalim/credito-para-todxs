@@ -40,6 +40,25 @@ const willBeHired = (payload) => {
       payload,
   }
 }
+const otherValue = (payload) => {
+  return {
+      type: 'OTHER_VALUE',
+      payload,
+  }
+}
+
+const showOtherContainer = (payload) => {
+  return {
+      type: 'SHOW_OTHER_CONTAINER',
+      payload,
+  }
+}
+
+const resetGlobalState = () => {
+  return {
+      type: 'RESET_GLOBAL_STATE',
+  }
+}
 // const thunk = (payload) => async (dispatch) => {
 
 //   }
@@ -50,4 +69,7 @@ export default {
   backToLoan,
   installmentsValue,
   willBeHired,
+  showOtherContainer,
+  otherValue,
+  resetGlobalState,
 }

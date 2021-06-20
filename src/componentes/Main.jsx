@@ -119,8 +119,7 @@ height: 2rem;
 export const Label = styled.label`
 position:relative;
 padding-top:20px;
-margin-bottom:5px;
-input:valid + span, input:focus + span {
+margin:0.5rem;input:valid + span, input:focus + span {
   top:20px;
   font-size:12px;
   color:rgb(0, 184, 215);
@@ -161,27 +160,48 @@ color:rgb(0, 184, 215);
 transform:translateY(-50%);
 transition: top 0.4s ease , font-size 0.4s ease , color 0.4s ease ;
 `;
+const ButtonInput = styled(Button)`
+min-width:50px;
+height: 2rem;
+&:disabled{
+  background-color:grey;
+}
+
+`;
 
 
 function Main() {
-  const { loanValue, showInstallments, installmentsMonths, installmentMonthValue, isHired } = useSelector((state) => state.userReducer);
+  const { loanValue, showInstallments, installmentsMonths, installmentMonthValue, isHired, showOtherContainer } = useSelector((state) => state.userReducer);
   const [modalIsOpen, setIsOpen] = useState(false);
+  const [input, setInput] = useState(null);
+  // value = value.replace(/,/g, '.')
+
   const dispatch = useDispatch()
 
+  function changeHandler({target:{value}}) {
+    const newValue = value.replace(/[^0-9]/g, "");
+    console.log(typeof +newValue)
+      setInput((state) => +newValue)
+  }
 
   function closeModal() {
     dispatch(allActions.userActions.willBeHired(false));
-
     setIsOpen(false);
     console.log("Fechou modal")
   }
 
+
   function hiredClickHandle() {
     dispatch(allActions.userActions.willBeHired(true));
+    dispatch(allActions.userActions.resetGlobalState());
+    setInput((state) => null)
+
   }
 
   function clickHandler(value) {
     dispatch(allActions.userActions.loanValue(value));
+    dispatch(allActions.userActions.showOtherContainer(false));
+    setInput((state) => null)
     console.log(value, loanValue)
   }
 
@@ -194,6 +214,13 @@ function Main() {
     console.log(futureValue, futureValuePerMonth);
     dispatch(allActions.userActions.installmentsValue(value, futureValue, futureValuePerMonth));
     setIsOpen(true);
+  }
+  function otherClickHandler(value) {
+    dispatch(allActions.userActions.showOtherContainer(value));
+  }
+  function otherValueClickHandler(value) {
+    console.log(value)
+    dispatch(allActions.userActions.loanValue(value));
   }
 
   return (
@@ -234,12 +261,17 @@ function Main() {
               <Button onClick={() => clickHandler(20000)}>RS 20.000</Button>
               <Button onClick={() => clickHandler(30000)}>RS 30.000</Button>
               <Button onClick={() => clickHandler(50000)}>RS 50.000</Button>
-              <Button onClick={() => clickHandler()}>Outro</Button>
+              <Button onClick={() => otherClickHandler(true)}>Outro</Button>
             </ButtonContainer>
+            {showOtherContainer && (
+            <>
             <Label>
-              <Input autoComplete="off" required type="number" name="login" />
+              <Input autoComplete="off" required type="text" onChange={(e) => changeHandler(e) } value={input} name="login" />
               <Span>Qual o valor?</Span>
             </Label>
+          <ButtonInput disabled={!input} onClick={() => otherValueClickHandler(input)}>Continuar</ButtonInput>
+          </>
+          )}
           </FormContainer>
           <Image src={mainImage} width="430px" />
         </MainContainer>

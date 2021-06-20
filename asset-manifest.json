@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/credito-para-todxs/static/css/main.b4766d2b.chunk.css",
-    "main.js": "/credito-para-todxs/static/js/main.36a817cc.chunk.js",
-    "main.js.map": "/credito-para-todxs/static/js/main.36a817cc.chunk.js.map",
+    "main.js": "/credito-para-todxs/static/js/main.3ab413b2.chunk.js",
+    "main.js.map": "/credito-para-todxs/static/js/main.3ab413b2.chunk.js.map",
     "runtime-main.js": "/credito-para-todxs/static/js/runtime-main.89f80038.js",
     "runtime-main.js.map": "/credito-para-todxs/static/js/runtime-main.89f80038.js.map",
     "static/js/2.c5247bc5.chunk.js": "/credito-para-todxs/static/js/2.c5247bc5.chunk.js",
@@ -22,6 +22,6 @@
     "static/js/runtime-main.89f80038.js",
     "static/js/2.c5247bc5.chunk.js",
     "static/css/main.b4766d2b.chunk.css",
-    "static/js/main.36a817cc.chunk.js"
+    "static/js/main.3ab413b2.chunk.js"
   ]
 }

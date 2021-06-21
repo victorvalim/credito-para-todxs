@@ -23,7 +23,7 @@ O projeto possui muito espaço para escalabilidade, como adicionar um sistema de
   
 <img src="https://i.imgur.com/IxVaQWC.png">
 
-<img src="https://i.imgur.com/41ZaDrx.mp4">
+<img src="https://i.imgur.com/gdccRqm.gif">
 
 
 ## Instalação e instruções de configurações

@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+## Programa #Código <para> todXs - Mobile
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Considere os seguintes critérios fictícios:
 
-## Available Scripts
 
-In the project directory, you can run:
+Você está liberado(a) para utilizar a tecnologia que domina atualmente e de forma criativa demonstrar seu conhecimento, para desenvolver um fluxo que:
 
-### `npm start`
+Liste as ofertas de crédito de acordo com o descritivo técnico;
+Detalhe a oferta do usuário ao momento de escolha;
+Apresente a revisão das informações;
+E permita-o realizar a contratação;
+Caso você seja uma pessoa que manda bem em front, se sinta livre em demonstrar seu conhecimento com uma jornada bonitona, ou se você manda bem em backend, fique à vontade para criar serviços para responder à esta jornada.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Status do Projeto
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+O projeto foi desenvolvido para possibilitar o usuário a escolher o melhor tipo de empréstimo de acordo com o seu perfil.
 
-### `npm test`
+Site permite o usuário listar, exibir e disponibilizar uma confirmação de ação do empréstimo.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+O site foi projetado para atender o maior número de pessoas independente de serem usuários de desktop/notebooks ou celulares.
 
-### `npm run build`
+O projeto possui muito espaço para escalabilidade, como adicionar um sistema de login e um sistema de acompanhamento dos pagamentos referente aos empréstimos.
+  
+<img src="https://imgur.com/a/ESfiUSG">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img src="https://imgur.com/a/X2ZkwY7">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Instalação e instruções de configurações
 
-### `npm run eject`
+Para clonar este repositório. Você terá que ter em sua máquina `node` e `npm` instalado globalmente na sua máquina.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Instalação:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`Antes de qualquer coisa, será necessário clonar o repositório e acessar a pasta de destino `
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+`git clone https://github.com/victorvalim/credito-para-todxs.git`  
+`cd credito-para-todxs/`
+ 
+Agora será necessário instalar as dependencias do projeto:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+`npm install`  
 
-## Learn More
+Iniciar a aplicação:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+`npm start`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+E visitar o app em seu navegador:
 
-### Code Splitting
+`localhost:3000/` 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Para uma amostra da aplicação acesse [CHECK](https://victorvalim.github.io/credito-para-todxs/)

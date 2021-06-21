@@ -28,7 +28,7 @@ O projeto possui muito espaço para escalabilidade, como adicionar um sistema de
 
 ## Instalação e instruções de configurações
 
-Para clonar este repositório. Você terá que ter em sua máquina `node` e `npm` instalado globalmente na sua máquina.
+Para clonar este repositório. Você terá que ter em sua máquina `node` e `npm` instalado globalmente.
 
 Instalação:
 

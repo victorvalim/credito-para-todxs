@@ -21,9 +21,6 @@ O site foi projetado para atender o maior número de pessoas independente de ser
 
 O projeto possui muito espaço para escalabilidade, como adicionar um sistema de login e um sistema de acompanhamento dos pagamentos referente aos empréstimos.
   
-<img src="https://i.imgur.com/IxVaQWC.png">
-
-<img src="https://i.imgur.com/gdccRqm.gif">
 
 
 ## Instalação e instruções de configurações
@@ -49,4 +46,16 @@ E visitar o app em seu navegador:
 
 `localhost:3000/` 
 
-Para uma amostra da aplicação acesse [CHECK](https://victorvalim.github.io/credito-para-todxs/)
+Para uma amostra da aplicação acesse o site [CHECK](https://victorvalim.github.io/credito-para-todxs/) 
+
+
+Ou para ter uma visão da aplicação e alguma de suas  funcionalidades, segue o gif e uma imagem.
+
+
+<img src="https://i.imgur.com/gdccRqm.gif">
+
+
+
+<img src="https://i.imgur.com/IxVaQWC.png">
+
+

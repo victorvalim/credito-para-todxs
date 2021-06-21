@@ -21,9 +21,9 @@ O site foi projetado para atender o maior número de pessoas independente de ser
 
 O projeto possui muito espaço para escalabilidade, como adicionar um sistema de login e um sistema de acompanhamento dos pagamentos referente aos empréstimos.
   
-<img src="https://imgur.com/a/ESfiUSG">
+<img src="https://i.imgur.com/IxVaQWC.png">
 
-<img src="https://imgur.com/a/X2ZkwY7">
+<img src="https://i.imgur.com/41ZaDrx.mp4">
 
 
 ## Instalação e instruções de configurações

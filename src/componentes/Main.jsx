@@ -17,6 +17,7 @@ const customStyles = {
     transform: 'translate(-50%, -50%)',
     'background-color': '#eee',
     'border-radius': '30px',
+    'border' : '3px solid rgb(0, 184, 215)',
 
   },
 };
@@ -76,7 +77,7 @@ width:100%;
 @media (max-width: 1024px){
   display: flex;
 flex-wrap: wrap;
-justify-content: space-evenly;
+justify-content: space-between;
 -webkit-box-align: center;
 align-items: center;
 
@@ -154,6 +155,7 @@ input:valid, input:focus{
   transition-delay:0.1s;
   border-color: #222;
 }
+
 `;
 
 export const Input = styled.input`
@@ -186,7 +188,7 @@ transition: top 0.4s ease , font-size 0.4s ease , color 0.4s ease ;
 `;
 const ButtonInput = styled(Button)`
 min-width:50px;
-height: 2rem;
+height: 2.5rem;
 &:disabled{
   background-color:grey;
 }
@@ -232,6 +234,7 @@ function Main() {
   function clickBackToLoan() {
     dispatch(allActions.userActions.backToLoan());
   }
+
   function clickHandlerInstallments(value, investment) {
     const futureValue = Number(investment) * (Math.pow(1.02, Number(value)));
     const futureValuePerMonth = futureValue / value;
@@ -239,9 +242,11 @@ function Main() {
     dispatch(allActions.userActions.installmentsValue(value, futureValue, futureValuePerMonth));
     setIsOpen(true);
   }
+
   function otherClickHandler(value) {
     dispatch(allActions.userActions.showOtherContainer(value));
   }
+
   function otherValueClickHandler(value) {
     console.log(value)
     dispatch(allActions.userActions.loanValue(value));
@@ -307,6 +312,8 @@ function Main() {
         onRequestClose={closeModal}
         style={customStyles}
         contentLabel="Example Modal"
+        closeTimeoutMS={500}
+
       >
 
         <ProposalDetailContainer>

@@ -21,7 +21,11 @@ O site foi projetado para atender o maior número de pessoas independente de ser
 
 O projeto possui muito espaço para escalabilidade, como adicionar um sistema de login e um sistema de acompanhamento dos pagamentos referente aos empréstimos.
   
+## Tecnologias Utilizadas
 
+React
+Styled Components
+Redux
 
 ## Instalação e instruções de configurações
 

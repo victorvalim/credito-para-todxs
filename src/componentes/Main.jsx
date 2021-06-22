@@ -111,10 +111,15 @@ background-color: rgb(0, 184, 215);
 &:hover {
 
   background-color: gray;
-
+  @media (max-width: 600px){
+    background-color: rgb(0, 184, 215)
+  }
 }
 &:active {
   animation: ${rotate} 0.2s linear;
+  @media (max-width: 600px){
+    animation: ${rotate} 0.1s linear;
+  }
 }
 `;
 
@@ -221,14 +226,12 @@ function Main() {
 
   function changeHandler({target:{value}}) {
     const newValue = value.replace(/[^0-9]/g, "");
-    console.log(typeof +newValue)
       setInput((state) => +newValue)
   }
 
   function closeModal() {
     dispatch(allActions.userActions.willBeHired(false));
     setIsOpen(false);
-    console.log("Fechou modal")
   }
 
 
@@ -243,7 +246,6 @@ function Main() {
     dispatch(allActions.userActions.loanValue(value));
     dispatch(allActions.userActions.showOtherContainer(false));
     setInput((state) => null)
-    console.log(value, loanValue)
   }
 
   function clickBackToLoan() {
@@ -253,7 +255,6 @@ function Main() {
   function clickHandlerInstallments(value, investment) {
     const futureValue = Number(investment) * (Math.pow(1.02, Number(value)));
     const futureValuePerMonth = futureValue / value;
-    console.log(futureValue, futureValuePerMonth);
     dispatch(allActions.userActions.installmentsValue(value, futureValue, futureValuePerMonth));
     setIsOpen(true);
   }
@@ -263,7 +264,6 @@ function Main() {
   }
 
   function otherValueClickHandler(value) {
-    console.log(value)
     dispatch(allActions.userActions.loanValue(value));
   }
 
@@ -300,11 +300,11 @@ function Main() {
               De quanto você precisa?
             </Text>
             <ButtonContainer>
-              <Button onClick={() => clickHandler(5000)}>RS 5.000</Button>
-              <Button onClick={() => clickHandler(10000)}>RS 10.000</Button>
-              <Button onClick={() => clickHandler(20000)}>RS 20.000</Button>
-              <Button onClick={() => clickHandler(30000)}>RS 30.000</Button>
-              <Button onClick={() => clickHandler(50000)}>RS 50.000</Button>
+              <Button onClick={() => clickHandler(5000)}>R$ 5.000</Button>
+              <Button onClick={() => clickHandler(10000)}>R$ 10.000</Button>
+              <Button onClick={() => clickHandler(20000)}>R$ 20.000</Button>
+              <Button onClick={() => clickHandler(30000)}>R$ 30.000</Button>
+              <Button onClick={() => clickHandler(50000)}>R$ 50.000</Button>
               <Button onClick={() => otherClickHandler(true)}>Outro</Button>
             </ButtonContainer>
             {showOtherContainer && (

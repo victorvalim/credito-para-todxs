@@ -140,7 +140,7 @@ width:80vw;
 const ModalText = styled(Text)`
 color: #575755;
 font-weight:300;
-
+text-align: center;
 `;
 const TextNumbers = styled(Text)`
 font-size:2rem;

@@ -114,7 +114,7 @@ background-color: rgb(0, 184, 215);
 
 }
 &:active {
-  animation: ${rotate} 0.08s linear;
+  animation: ${rotate} 0.2s linear;
 }
 `;
 

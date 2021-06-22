@@ -23,9 +23,7 @@ O projeto possui muito espaço para escalabilidade, como adicionar um sistema de
   
 ## Tecnologias Utilizadas
 
-React
-Styled Components
-Redux
+React, Styled Components e Redux.
 
 ## Instalação e instruções de configurações
 

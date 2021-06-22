@@ -1,11 +1,23 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import mainImage from '../imagens/mainImage.png'
 import { AiOutlineLeft } from "react-icons/ai";
 import allActions from '../actions';
 import Modal from 'react-modal';
 import { useState } from 'react';
+
+const rotate = keyframes`
+0% {
+  transform: scale(1)
+}
+50% {
+  transform: scale(1.2)
+}
+100% {
+  transform: scale(1)
+}
+`;
 
 const customStyles = {
   content: {
@@ -101,6 +113,9 @@ background-color: rgb(0, 184, 215);
   background-color: gray;
 
 }
+&:active {
+  animation: ${rotate} 0.08s linear;
+}
 `;
 
 const ProposalDetailContainer = styled.div`
@@ -138,7 +153,7 @@ font-weight:400;
 
 const ButtonModal = styled(Button)`
 min-width:150px;
-height: 2rem;
+height: 3rem;
 
 `;
 export const Label = styled.label`
@@ -187,7 +202,7 @@ transform:translateY(-50%);
 transition: top 0.4s ease , font-size 0.4s ease , color 0.4s ease ;
 `;
 const ButtonInput = styled(Button)`
-min-width:50px;
+min-width:120px;
 height: 2.5rem;
 &:disabled{
   background-color:grey;
@@ -312,7 +327,6 @@ function Main() {
         onRequestClose={closeModal}
         style={customStyles}
         contentLabel="Example Modal"
-        closeTimeoutMS={500}
 
       >
 

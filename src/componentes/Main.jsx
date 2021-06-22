@@ -100,14 +100,14 @@ cursor: pointer;
 margin:0.5rem;
 width:25%;
 height: 4rem;
-font-size: 18px;
-font-weight: bold;
+font-size: 20px;
 color: rgb(255, 255, 255);
 border: 0px;
 background-color: #C44C43;
 box-shadow: 0 3px 3px 0px RGB(0, 0, 0, 0.3);
 border-radius: 7px;
 background-color: rgb(0, 184, 215);
+font-weight: 700;
 &:hover {
 
   background-color: gray;

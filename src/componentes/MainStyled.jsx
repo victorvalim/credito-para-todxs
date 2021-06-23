@@ -173,7 +173,7 @@ height: 2rem;
 
 `;
 
-const ModalTextWithShadowBox = styled(ModalText)`
+export const ModalTextWithShadowBox = styled(ModalText)`
 color: gray;
 font-size:15px;
 font-weight:200;

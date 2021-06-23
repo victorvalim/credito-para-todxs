@@ -142,6 +142,16 @@ color: #575755;
 font-weight:300;
 text-align: center;
 `;
+
+const ModalTextWithShadowBox = styled(ModalText)`
+color: gray;
+font-size:15px;
+font-weight:200;
+text-align: center;
+border-top: 0.1px solid gray;
+
+
+`;
 const TextNumbers = styled(Text)`
 font-size:2rem;
 color:rgb(0, 184, 215);
@@ -342,6 +352,7 @@ function Main() {
               <TextNumbers>{`${installmentsMonths}X`}</TextNumbers>
               <TextNumbersBig>{`R$ `}<strong>{`${installmentMonthValue.toFixed(2)}`}</strong></TextNumbersBig>
               <ButtonModal onClick={() => hiredClickHandle()}>Contratar</ButtonModal>
+              <ModalTextWithShadowBox>Estamos considerando as taxas médias oferecidas pelos parceiros.</ModalTextWithShadowBox>
             </>
           )}
 

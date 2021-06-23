@@ -1,5 +1,11 @@
 ## Programa #Código <para> todXs - Mobile
 
+
+O problema:
+
+A empresa CréditoParaTodxs é uma empresa multinacional que ajuda milhões de pessoas a conseguirem crédito pessoal.
+
+Um dos grandes desafios desta empresa, é se comunicar de forma efetiva com seus respectivos clientes. Por exemplo, uma das necessidades é apresentar, de acordo com sua saúde financeira, propostas de empréstimo pessoal.
 Considere os seguintes critérios fictícios:
 
 
@@ -15,9 +21,9 @@ Caso você seja uma pessoa que manda bem em front, se sinta livre em demonstrar 
 
 O projeto foi desenvolvido para possibilitar o usuário a escolher o melhor tipo de empréstimo de acordo com o seu perfil.
 
-Site permite o usuário listar, exibir e disponibilizar uma confirmação de ação do empréstimo.
+Site permite o usuário listar e exibir opções de empréstimo, além de disponibilizar uma confirmação para a ação de contratação do serviço.
 
-O site foi projetado para atender o maior número de pessoas independente de serem usuários de desktop/notebooks ou celulares.
+O site foi projetado para atender o maior número de pessoas independente de serem usuários de desktop/notebooks ou celulares.Dito isso, responsividade foi uma das características mais focadas durante a idealização neste projeto para atender as telas mobiles mais utilizadas.
 
 O projeto possui muito espaço para escalabilidade, como adicionar um sistema de login e um sistema de acompanhamento dos pagamentos referente aos empréstimos.
   

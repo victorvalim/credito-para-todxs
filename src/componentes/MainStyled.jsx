@@ -1,5 +1,16 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
+const rotate = keyframes`
+0% {
+  transform: scale(1)
+}
+50% {
+  transform: scale(1.2)
+}
+100% {
+  transform: scale(1)
+}
+`;
 export const MainContainer = styled.main`
 width:100vw;
 padding:4rem;
@@ -74,10 +85,20 @@ background-color: #C44C43;
 box-shadow: 0 3px 3px 0px RGB(0, 0, 0, 0.3);
 border-radius: 7px;
 background-color: rgb(0, 184, 215);
+font-weight: 700;
 &:hover {
 
   background-color: gray;
 
+  @media (max-width: 600px){
+    background-color: rgb(0, 184, 215)
+  }
+}
+&:active {
+  animation: ${rotate} 0.2s linear;
+  @media (max-width: 600px){
+    animation: ${rotate} 0.1s linear;
+  }
 }
 `;
 
@@ -99,8 +120,9 @@ width:80vw;
 export const ModalText = styled(Text)`
 color: #575755;
 font-weight:300;
-
+text-align: center;
 `;
+
 export const TextNumbers = styled(Text)`
 font-size:1.5rem;
 color:rgb(0, 184, 215);
@@ -117,8 +139,7 @@ font-weight:400;
 
 export const ButtonModal = styled(Button)`
 min-width:150px;
-height: 2rem;
-
+height: 3rem;
 `;
 export const Label = styled.label`
 position:relative;
@@ -165,7 +186,7 @@ transform:translateY(-50%);
 transition: top 0.4s ease , font-size 0.4s ease , color 0.4s ease ;
 `;
 export const ButtonInput = styled(Button)`
-min-width:50px;
+min-width:120px;
 height: 2rem;
 &:disabled{
   background-color:grey;

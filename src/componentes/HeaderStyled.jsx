@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
 font-size:2rem;
-font-family: "Gotham A", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 width:100vw;
 height: 5rem;
 top: 0px;
@@ -13,6 +12,8 @@ display: flex;
 justify-content: center;
 align-items: center;
 background-color:white;
+font-weight: 600;
+
 `;
 
 export const Text = styled.p`

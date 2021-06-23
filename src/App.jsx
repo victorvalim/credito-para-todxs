@@ -4,9 +4,7 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
-import allActions from './actions';
 import Home from './paginas/Home';
-import NoMatch from './paginas/NoMatch';
 import GlobalStyle from './componentes/GlobalStyle'
 
 function App() {

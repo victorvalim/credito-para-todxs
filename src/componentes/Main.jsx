@@ -1,13 +1,25 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import mainImage from '../imagens/mainImage.png'
 import { AiOutlineLeft } from "react-icons/ai";
 import allActions from '../actions';
 import Modal from 'react-modal';
 import { useState } from 'react';
-import { MainContainer, Image, FormContainer, Text, TextWithSVG, ButtonContainer, Button, ProposalDetailContainer, ModalText, TextNumbers, TextNumbersBig, ButtonModal, Label, Input, Span, ButtonInput } from './MainStyled'
+import { MainContainer, Image, FormContainer, Text, TextWithSVG, ButtonContainer, Button, ProposalDetailContainer, ModalText, TextNumbers, TextNumbersBig, ButtonModal, Label, Input, Span, ButtonInput, ModalTextWithShadowBox } from './MainStyled'
 
+
+const rotate = keyframes`
+0% {
+  transform: scale(1)
+}
+50% {
+  transform: scale(1.2)
+}
+100% {
+  transform: scale(1)
+}
+`;
 
 const customStyles = {
   content: {
@@ -19,6 +31,7 @@ const customStyles = {
     transform: 'translate(-50%, -50%)',
     'background-color': '#eee',
     'border-radius': '30px',
+    'border' : '3px solid rgb(0, 184, 215)',
 
   },
 };
@@ -65,9 +78,11 @@ function Main() {
     dispatch(allActions.userActions.installmentsValue(value, futureValue, futureValuePerMonth));
     setIsOpen(true);
   }
+
   function otherClickHandler(value) {
     dispatch(allActions.userActions.showOtherContainer(value));
   }
+
   function otherValueClickHandler(value) {
     dispatch(allActions.userActions.loanValue(value));
   }
@@ -105,11 +120,11 @@ function Main() {
               De quanto você precisa?
             </Text>
             <ButtonContainer>
-              <Button onClick={() => clickHandler(5000)}>RS 5.000</Button>
-              <Button onClick={() => clickHandler(10000)}>RS 10.000</Button>
-              <Button onClick={() => clickHandler(20000)}>RS 20.000</Button>
-              <Button onClick={() => clickHandler(30000)}>RS 30.000</Button>
-              <Button onClick={() => clickHandler(50000)}>RS 50.000</Button>
+              <Button onClick={() => clickHandler(5000)}>R$ 5.000</Button>
+              <Button onClick={() => clickHandler(10000)}>R$ 10.000</Button>
+              <Button onClick={() => clickHandler(20000)}>R$ 20.000</Button>
+              <Button onClick={() => clickHandler(30000)}>R$ 30.000</Button>
+              <Button onClick={() => clickHandler(50000)}>R$ 50.000</Button>
               <Button onClick={() => otherClickHandler(true)}>Outro</Button>
             </ButtonContainer>
             {showOtherContainer && (
@@ -132,12 +147,13 @@ function Main() {
         onRequestClose={closeModal}
         style={customStyles}
         contentLabel="Example Modal"
+
       >
 
         <ProposalDetailContainer>
           {isHired ? (
             <>
-              <ModalText>Obrigado por nos contratar</ModalText>
+              <ModalText>Obrigado por Contratar nossos Serviços !!!</ModalText>
               <ButtonModal onClick={() => closeModal()}>Finalizar</ButtonModal>
             </>
           ) : (
@@ -146,6 +162,7 @@ function Main() {
               <TextNumbers>{`${installmentsMonths}X`}</TextNumbers>
               <TextNumbersBig>{`R$ `}<strong>{`${installmentMonthValue.toFixed(2)}`}</strong></TextNumbersBig>
               <ButtonModal onClick={() => hiredClickHandle()}>Contratar</ButtonModal>
+              <ModalTextWithShadowBox>Estamos considerando as taxas médias oferecidas pelos parceiros.</ModalTextWithShadowBox>
             </>
           )}
 

@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+## Programa #Código <para> todXs - Mobile
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+O problema:
 
-In the project directory, you can run:
+A empresa CréditoParaTodxs é uma empresa multinacional que ajuda milhões de pessoas a conseguirem crédito pessoal.
 
-### `npm start`
+Um dos grandes desafios desta empresa, é se comunicar de forma efetiva com seus respectivos clientes. Por exemplo, uma das necessidades é apresentar, de acordo com sua saúde financeira, propostas de empréstimo pessoal.
+Considere os seguintes critérios fictícios:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Você está liberado(a) para utilizar a tecnologia que domina atualmente e de forma criativa demonstrar seu conhecimento, para desenvolver um fluxo que:
 
-### `npm test`
+Liste as ofertas de crédito de acordo com o descritivo técnico;
+Detalhe a oferta do usuário ao momento de escolha;
+Apresente a revisão das informações;
+E permita-o realizar a contratação;
+Caso você seja uma pessoa que manda bem em front, se sinta livre em demonstrar seu conhecimento com uma jornada bonitona, ou se você manda bem em backend, fique à vontade para criar serviços para responder à esta jornada.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Status do Projeto
 
-### `npm run build`
+O projeto foi desenvolvido para possibilitar o usuário a escolher o melhor tipo de empréstimo de acordo com o seu perfil.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Site permite o usuário listar e exibir opções de empréstimo, além de disponibilizar uma confirmação para a ação de contratação do serviço.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+O site foi projetado para atender o maior número de pessoas independente de serem usuários de desktop/notebooks ou celulares.Dito isso, responsividade foi uma das características mais focadas durante a idealização neste projeto para atender as telas mobiles mais utilizadas.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+O projeto possui muito espaço para escalabilidade, como adicionar um sistema de login e um sistema de acompanhamento dos pagamentos referente aos empréstimos.
+  
+## Tecnologias Utilizadas
 
-### `npm run eject`
+React, Styled Components e Redux.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Instalação e instruções de configurações
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Para clonar este repositório. Você terá que ter em sua máquina `node` e `npm` instalado globalmente.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Instalação:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+`Antes de qualquer coisa, será necessário clonar o repositório e acessar a pasta de destino `
 
-## Learn More
+`git clone https://github.com/victorvalim/credito-para-todxs.git`  
+`cd credito-para-todxs/`
+ 
+Agora será necessário instalar as dependencias do projeto:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+`npm install`  
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Iniciar a aplicação:
 
-### Code Splitting
+`npm start`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+E visitar o app em seu navegador:
 
-### Analyzing the Bundle Size
+`localhost:3000/` 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Para uma amostra da aplicação acesse o site [CHECK](https://victorvalim.github.io/credito-para-todxs/) 
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Ou para ter uma visão da aplicação e alguma de suas  funcionalidades, segue o gif e uma imagem.
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<img src="https://i.imgur.com/gdccRqm.gif">
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+<img src="https://i.imgur.com/IxVaQWC.png">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+

@@ -172,3 +172,13 @@ height: 2rem;
 }
 
 `;
+
+const ModalTextWithShadowBox = styled(ModalText)`
+color: gray;
+font-size:15px;
+font-weight:200;
+text-align: center;
+border-top: 0.1px solid gray;
+
+
+`;

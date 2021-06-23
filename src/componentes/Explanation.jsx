@@ -35,18 +35,18 @@ function Explanation() {
         </ItemContainer>
         <ItemContainer>
           <Image src={tres} />
-          <TextoContainerStrong>Seguro
+          <TextoContainerStrong>Parcelas em até 72 vezes
           </TextoContainerStrong>
-          <TextoContainer>Você solicita na segurança da sua casa, sem contato físico com ninguém.</TextoContainer>
+          <TextoContainer>Você decide a melhor forma de organizar as parcelas que cabem no seu bolso.</TextoContainer>
         </ItemContainer>
         <ItemContainer>
           <Image src={quatro} />
-          <TextoContainerStrong>Seguro
+          <TextoContainerStrong>Sem garantia
           </TextoContainerStrong>
-          <TextoContainer>Você solicita na segurança da sua casa, sem contato físico com ninguém.</TextoContainer>
+          <TextoContainer>Fique tranquilo, não pedimos seus bens como garantia, nem imóveis e nem carro.</TextoContainer>
         </ItemContainer>
       </ImageContainer>
-      <Button onClick={() => scrollTop()}>Simular</Button>
+      <Button onClick={() => scrollTop()}>Simular empréstimo</Button>
     </MainContainer >
   );
 }

@@ -59,9 +59,6 @@ const resetGlobalState = () => {
       type: 'RESET_GLOBAL_STATE',
   }
 }
-// const thunk = (payload) => async (dispatch) => {
-
-//   }
 
 export default {
   defaultAction,

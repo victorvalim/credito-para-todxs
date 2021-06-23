@@ -41,7 +41,7 @@ Para clonar este repositório. Você terá que ter em sua máquina `node` e `npm
 
 Instalação:
 
-`Antes de qualquer coisa, será necessário clonar o repositório e acessar a pasta de destino `
+`Antes de qualquer coisa, será necessário abrir seu terminal, clonar o repositório e acessar a pasta de destino `
 
 `git clone https://github.com/victorvalim/credito-para-todxs.git`  
 `cd credito-para-todxs/`

@@ -5,10 +5,11 @@ import thirdExplanationImage from '../imagens/thirdExplanationImage.webp'
 import fourthExplanationImage from '../imagens/fourthExplanationImage.webp'
 import {
   MainContainer, Text, ImageContainer, ItemContainer
-  ,Image, TextoContainerStrong, TextoContainer, Button
+  , Image, TextoContainerStrong, TextoContainer, Button
 } from './ExplanationStyled'
 
 function Explanation() {
+
   function scrollTop() {
 
     window.scroll({
@@ -17,7 +18,9 @@ function Explanation() {
       behavior: 'smooth',
     });
   }
+
   return (
+
     <MainContainer>
       <Text>O empréstimo que te ajuda:
       </Text>

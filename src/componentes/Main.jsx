@@ -17,22 +17,23 @@ const customStyles = {
     transform: 'translate(-50%, -50%)',
     'background-color': '#eee',
     'border-radius': '30px',
-    'border' : '3px solid rgb(0, 184, 215)',
+    'border': '3px solid rgb(0, 184, 215)',
 
   },
 };
 
 
 function Main() {
+
   const { loanValue, showInstallments, installmentsMonths, installmentMonthValue, isHired, showOtherContainer } = useSelector((state) => state.userReducer);
   const [modalIsOpen, setIsOpen] = useState(false);
   const [input, setInput] = useState(null);
 
   const dispatch = useDispatch()
 
-  function changeHandler({target:{value}}) {
+  function changeHandler({ target: { value } }) {
     const newValue = value.replace(/[^0-9]/g, "");
-      setInput((state) => +newValue)
+    setInput((state) => +newValue)
   }
 
   function closeModal() {
@@ -74,29 +75,35 @@ function Main() {
   }
 
   return (
+
     <>
 
-      {showInstallments ? (<MainContainer>
-        <FormContainer>
-          <TextWithSVG>
-            <AiOutlineLeft onClick={() => clickBackToLoan()} />
-            {`Você selecionou R$ `}<strong>{`${loanValue}`}</strong>
-          </TextWithSVG>
-          <Text>
+      {showInstallments ? (
 
-            EM QUANTAS PARCELAS?
-          </Text>
-          <ButtonContainer>
-            <Button onClick={() => clickHandlerInstallments(12, loanValue)}>12X</Button>
-            <Button onClick={() => clickHandlerInstallments(18, loanValue)}>18X</Button>
-            <Button onClick={() => clickHandlerInstallments(24, loanValue)}>24X</Button>
-            <Button onClick={() => clickHandlerInstallments(30, loanValue)}>30X</Button>
-            <Button onClick={() => clickHandlerInstallments(36, loanValue)}>36X</Button>
-            <Button onClick={() => clickHandlerInstallments(72, loanValue)}>72X</Button>
-          </ButtonContainer>
-        </FormContainer>
-        <Image src={mainImage} width="430px" />
-      </MainContainer>) : (
+        <MainContainer>
+          <FormContainer>
+            <TextWithSVG>
+              <AiOutlineLeft onClick={() => clickBackToLoan()} />
+              {`Você selecionou R$ `}<strong>{`${loanValue}`}</strong>
+            </TextWithSVG>
+            <Text>
+
+              EM QUANTAS PARCELAS?
+            </Text>
+            <ButtonContainer>
+              <Button onClick={() => clickHandlerInstallments(12, loanValue)}>12X</Button>
+              <Button onClick={() => clickHandlerInstallments(18, loanValue)}>18X</Button>
+              <Button onClick={() => clickHandlerInstallments(24, loanValue)}>24X</Button>
+              <Button onClick={() => clickHandlerInstallments(30, loanValue)}>30X</Button>
+              <Button onClick={() => clickHandlerInstallments(36, loanValue)}>36X</Button>
+              <Button onClick={() => clickHandlerInstallments(72, loanValue)}>72X</Button>
+            </ButtonContainer>
+          </FormContainer>
+          <Image src={mainImage} width="430px" />
+        </MainContainer>
+
+      ) : (
+
         <MainContainer>
           <FormContainer>
             <TextWithSVG>
@@ -113,15 +120,17 @@ function Main() {
               <Button onClick={() => clickHandler(50000)}>R$ 50.000</Button>
               <Button onClick={() => otherClickHandler(true)}>Outro</Button>
             </ButtonContainer>
+
             {showOtherContainer && (
-            <>
-            <Label>
-              <Input autoComplete="off" required type="text" onChange={(e) => changeHandler(e) } value={input} name="login" />
-              <Span>Qual o valor?</Span>
-            </Label>
-          <ButtonInput disabled={!input} onClick={() => otherValueClickHandler(input)}>Continuar</ButtonInput>
-          </>
-          )}
+
+              <>
+                <Label>
+                  <Input autoComplete="off" required type="text" onChange={(e) => changeHandler(e)} value={input} name="login" />
+                  <Span>Qual o valor?</Span>
+                </Label>
+                <ButtonInput disabled={!input} onClick={() => otherValueClickHandler(input)}>Continuar</ButtonInput>
+              </>
+            )}
           </FormContainer>
           <Image src={mainImage} width="430px" />
         </MainContainer>
@@ -138,10 +147,12 @@ function Main() {
 
         <ProposalDetailContainer>
           {isHired ? (
+
             <>
               <ModalText>Obrigado por Contratar nossos Serviços !!!</ModalText>
               <ButtonModal onClick={() => closeModal()}>Finalizar</ButtonModal>
             </>
+
           ) : (
             <>
               <ModalText>Parcela mensal aproximada</ModalText>
@@ -155,7 +166,9 @@ function Main() {
         </ProposalDetailContainer>
 
       </Modal>
+
     </>
+
   );
 }
 export default Main;

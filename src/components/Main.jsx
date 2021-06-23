@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import mainImage from '../imagens/mainImage.png'
+import mainImage from '../images/mainImage.png'
 import { AiOutlineLeft } from "react-icons/ai";
 import allActions from '../actions';
 import Modal from 'react-modal';

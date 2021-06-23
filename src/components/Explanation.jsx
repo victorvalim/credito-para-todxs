@@ -1,8 +1,8 @@
 import React from 'react';
-import firstExplanationImage from '../imagens/firstExplanationImage.webp'
-import secondExplanationImage from '../imagens/secondExplanationImage.webp'
-import thirdExplanationImage from '../imagens/thirdExplanationImage.webp'
-import fourthExplanationImage from '../imagens/fourthExplanationImage.webp'
+import firstExplanationImage from '../images/firstExplanationImage.webp'
+import secondExplanationImage from '../images/secondExplanationImage.webp'
+import thirdExplanationImage from '../images/thirdExplanationImage.webp'
+import fourthExplanationImage from '../images/fourthExplanationImage.webp'
 import {
   MainContainer, Text, ImageContainer, ItemContainer
   , Image, TextoContainerStrong, TextoContainer, Button

@@ -4,8 +4,8 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
-import Home from './paginas/Home';
-import GlobalStyle from './componentes/GlobalStyle'
+import Home from './pages/Home';
+import GlobalStyle from './components/GlobalStyle'
 
 function App() {
   return (

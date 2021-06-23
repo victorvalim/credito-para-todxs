@@ -74,6 +74,7 @@ box-shadow: 0 3px 3px 0px RGB(0, 0, 0, 0.3);
 border-radius: 7px;
 background-color: rgb(0, 184, 215);
 margin: 0 auto;
+cursor:pointer;
 
 
 &:hover {

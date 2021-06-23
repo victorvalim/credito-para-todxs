@@ -1,8 +1,8 @@
 import React from 'react';
-import um from '../imagens/um.webp'
-import dois from '../imagens/dois.webp'
-import tres from '../imagens/tres.webp'
-import quatro from '../imagens/quatro.webp'
+import firstExplanationImage from '../imagens/firstExplanationImage.webp'
+import secondExplanationImage from '../imagens/secondExplanationImage.webp'
+import thirdExplanationImage from '../imagens/thirdExplanationImage.webp'
+import fourthExplanationImage from '../imagens/fourthExplanationImage.webp'
 import {
   MainContainer, Text, ImageContainer, ItemContainer
   ,Image, TextoContainerStrong, TextoContainer, Button
@@ -23,24 +23,24 @@ function Explanation() {
       </Text>
       <ImageContainer>
         <ItemContainer>
-          <Image src={um} />
+          <Image src={firstExplanationImage} />
           <TextoContainerStrong>Dinheiro Rápido</TextoContainerStrong>
           <TextoContainer>Em até 1 dia útil, após aprovação do contrato e documentos, o dinheiro está na sua conta.</TextoContainer>
         </ItemContainer>
         <ItemContainer>
-          <Image src={dois} />
+          <Image src={secondExplanationImage} />
           <TextoContainerStrong>Seguro
           </TextoContainerStrong>
           <TextoContainer>Você solicita na segurança da sua casa, sem contato físico com ninguém.</TextoContainer>
         </ItemContainer>
         <ItemContainer>
-          <Image src={tres} />
+          <Image src={thirdExplanationImage} />
           <TextoContainerStrong>Parcelas em até 72 vezes
           </TextoContainerStrong>
           <TextoContainer>Você decide a melhor forma de organizar as parcelas que cabem no seu bolso.</TextoContainer>
         </ItemContainer>
         <ItemContainer>
-          <Image src={quatro} />
+          <Image src={fourthExplanationImage} />
           <TextoContainerStrong>Sem garantia
           </TextoContainerStrong>
           <TextoContainer>Fique tranquilo, não pedimos seus bens como garantia, nem imóveis e nem carro.</TextoContainer>

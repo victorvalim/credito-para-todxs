@@ -1,6 +1,5 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import styled, { keyframes } from 'styled-components';
 import mainImage from '../imagens/mainImage.png'
 import { AiOutlineLeft } from "react-icons/ai";
 import allActions from '../actions';

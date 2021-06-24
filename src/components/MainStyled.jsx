@@ -66,7 +66,7 @@ width:100%;
 @media (max-width: 1024px){
   display: flex;
 flex-wrap: wrap;
-justify-content: space-evenly;
+justify-content: space-between;
 -webkit-box-align: center;
 align-items: center;
 
@@ -187,7 +187,7 @@ transition: top 0.4s ease , font-size 0.4s ease , color 0.4s ease ;
 `;
 export const ButtonInput = styled(Button)`
 min-width:120px;
-height: 2rem;
+height: 2.5rem;
 &:disabled{
   background-color:grey;
 }
